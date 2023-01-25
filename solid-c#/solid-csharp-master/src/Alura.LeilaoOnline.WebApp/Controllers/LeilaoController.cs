@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Alura.LeilaoOnline.WebApp.Dados;
 using Alura.LeilaoOnline.WebApp.Models;
 using System;
+using System.Collections.Generic;
 
 namespace Alura.LeilaoOnline.WebApp.Controllers
 {
@@ -15,6 +16,16 @@ namespace Alura.LeilaoOnline.WebApp.Controllers
         public LeilaoController()
         {
             _context = new AppDbContext();
+        }
+
+        private IEnumerable<Categoria> BuscarCategoria()
+        {
+            return _context.Categorias.ToList();
+        }
+
+        private Leilao BuscarPorId(int id)
+        {
+            return _context.Leiloes.First(x => x.Id == id);
         }
 
         public IActionResult Index()

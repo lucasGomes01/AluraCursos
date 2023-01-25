@@ -1,0 +1,15 @@
+T:\Estudos\AluraCursos\byteBank\byteBank\bin\Debug\net6.0\byteBank.exe
+T:\Estudos\AluraCursos\byteBank\byteBank\bin\Debug\net6.0\byteBank.deps.json
+T:\Estudos\AluraCursos\byteBank\byteBank\bin\Debug\net6.0\byteBank.runtimeconfig.json
+T:\Estudos\AluraCursos\byteBank\byteBank\bin\Debug\net6.0\byteBank.dll
+T:\Estudos\AluraCursos\byteBank\byteBank\bin\Debug\net6.0\byteBank.pdb
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\byteBank.csproj.AssemblyReference.cache
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\byteBank.GeneratedMSBuildEditorConfig.editorconfig
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\byteBank.AssemblyInfoInputs.cache
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\byteBank.AssemblyInfo.cs
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\byteBank.csproj.CoreCompileInputs.cache
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\byteBank.dll
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\refint\byteBank.dll
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\byteBank.pdb
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\byteBank.genruntimeconfig.cache
+T:\Estudos\AluraCursos\byteBank\byteBank\obj\Debug\net6.0\ref\byteBank.dll
