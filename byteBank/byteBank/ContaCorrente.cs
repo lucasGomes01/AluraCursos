@@ -11,7 +11,7 @@ namespace byteBank
         public int numero_agencia;
         public string conta;
         public string titular;
-        public double saldo;
+        public double saldo = 100;
 
         public void Depositar(double valor)
         {
@@ -39,6 +39,14 @@ namespace byteBank
                 destino.Depositar(valor);
                 return true;
             }
+        }
+
+        public void ExibirDadosDaConta()
+        {
+            Console.WriteLine("Titular :" + titular);
+            Console.WriteLine("Conta :" + conta);
+            Console.WriteLine("Número Agência :" + numero_agencia);
+            Console.WriteLine("Saldo: " + saldo);
         }
     }
 }
