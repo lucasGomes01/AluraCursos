@@ -1,4 +1,6 @@
 ﻿using byteBank;
+using byteBank.Contas;
+using byteBank.Titular;
 
 #region Pratica dos desafios
 Produto produto = new();
@@ -9,6 +11,25 @@ produto.Quantidade = 1000;
 produto.CodigoBarras = 145781324;
 
 //Console.WriteLine("Produto criado do exercício é = " + produto.Nome);
+
+//ContaCorrente contaDoAndre = new ContaCorrente
+//{
+//    titular = "André Silva",
+//    numero_agencia = 15,
+//    conta = "1010-x",
+//    saldo = 200
+//};
+
+//ContaCorrente contaDoAndre2 = new ContaCorrente
+//{
+//    titular = "André Silva",
+//    numero_agencia = 15,
+//    conta = "1010-x",
+//    saldo = 200
+//};
+
+//contaDoAndre2.ExibirDadosDaConta();
+//Console.WriteLine(contaDoAndre == contaDoAndre2);
 #endregion
 
 #region Codigos que seriam apagados
@@ -20,25 +41,6 @@ produto.CodigoBarras = 145781324;
 //else
 //    Console.WriteLine("Saldo insuficiente para saque");
 #endregion
-
-ContaCorrente contaDoAndre = new ContaCorrente
-{
-    titular = "André Silva",
-    numero_agencia = 15,
-    conta = "1010-x",
-    saldo = 200
-};
-
-ContaCorrente contaDoAndre2 = new ContaCorrente
-{
-    titular = "André Silva",
-    numero_agencia = 15,
-    conta = "1010-x",
-    saldo = 200
-};
-
-contaDoAndre2.ExibirDadosDaConta();
-Console.WriteLine(contaDoAndre == contaDoAndre2);
 
 //Console.WriteLine("Saldo da conta do Andre = " + contaDoAndre.saldo);
 
@@ -66,10 +68,31 @@ Console.WriteLine(contaDoAndre == contaDoAndre2);
 //Console.WriteLine(contaDoPedro.numero_agencia);
 //Console.WriteLine(contaDoPedro.conta);
 
-double valor = 300;
-double valor2 = valor;
+Cliente cliente = new()
+{
+    nome = "André Silva",
+    cpf = "1234566789",
+    profissao = "Analista"
+};
 
-Console.WriteLine(valor == valor2);
-Console.WriteLine((valor, valor2));
+ContaCorrente conta = new()
+{
+    titular = cliente,
+    conta = "1010-x",
+    numero_agencia = 1,
+    saldo = 100
+};
 
-ContaCorrente conta = new ContaCorrente();
+Console.WriteLine(conta.titular.nome);
+
+ContaCorrente conta2 = new();
+conta2.titular = new Cliente();
+
+conta2.titular.nome = "lucas";
+conta2.titular.cpf = "12345678";
+conta2.titular.profissao = "DEV";
+conta2.conta = "1011-x";
+conta2.numero_agencia = 11;
+conta2.saldo = 1002;
+
+Console.WriteLine(conta2.titular.nome);

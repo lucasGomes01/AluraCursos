@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace byteBank
+﻿namespace byteBank
 {
     public class Produto
     {
+        public decimal Id { get; set; }
         public string? Nome { get; set; }
         public string? Fabricante { get; set; }
         public int CodigoBarras { get; set; }
