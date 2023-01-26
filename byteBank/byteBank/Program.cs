@@ -68,31 +68,39 @@ produto.CodigoBarras = 145781324;
 //Console.WriteLine(contaDoPedro.numero_agencia);
 //Console.WriteLine(contaDoPedro.conta);
 
-Cliente cliente = new()
-{
-    nome = "André Silva",
-    cpf = "1234566789",
-    profissao = "Analista"
-};
+//Cliente cliente = new()
+//{
+//    nome = "André Silva",
+//    cpf = "1234566789",
+//    profissao = "Analista"
+//};
 
-ContaCorrente conta = new()
-{
-    titular = cliente,
-    conta = "1010-x",
-    numero_agencia = 1,
-    saldo = 100
-};
+//ContaCorrente conta = new()
+//{
+//    titular = cliente,
+//    conta = "1010-x",
+//    numero_agencia = 1,
+//    saldo = 100
+//};
 
-Console.WriteLine(conta.titular.nome);
+//Console.WriteLine(conta.titular.nome);
 
-ContaCorrente conta2 = new();
-conta2.titular = new Cliente();
+//ContaCorrente conta2 = new();
+//conta2.titular = new Cliente();
 
-conta2.titular.nome = "lucas";
-conta2.titular.cpf = "12345678";
-conta2.titular.profissao = "DEV";
-conta2.conta = "1011-x";
-conta2.numero_agencia = 11;
-conta2.saldo = 1002;
+//conta2.titular.nome = "lucas";
+//conta2.titular.cpf = "12345678";
+//conta2.titular.profissao = "DEV";
+//conta2.conta = "1011-x";
+//conta2.numero_agencia = 11;
+//conta2.saldo = 1002;
 
-Console.WriteLine(conta2.titular.nome);
+//Console.WriteLine(conta2.titular.nome);
+
+ContaCorrente conta3 = new();
+conta3.Numero_agencia = 18;
+conta3.Conta = "1011-h";
+conta3.SetSaldo(-10);
+Console.WriteLine(conta3.GetSaldo());
+Console.WriteLine(conta3.Numero_agencia);
+Console.WriteLine(conta3.Conta);
