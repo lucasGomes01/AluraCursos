@@ -97,10 +97,24 @@ produto.CodigoBarras = 145781324;
 
 //Console.WriteLine(conta2.titular.nome);
 
-ContaCorrente conta3 = new();
-conta3.Numero_agencia = 18;
-conta3.Conta = "1011-h";
-conta3.SetSaldo(-10);
-Console.WriteLine(conta3.GetSaldo());
-Console.WriteLine(conta3.Numero_agencia);
-Console.WriteLine(conta3.Conta);
+//ContaCorrente conta3 = new();
+//conta3.Numero_agencia = 18;
+//conta3.Conta = "1011-h";
+//conta3.SetSaldo(-10);
+//Console.WriteLine(conta3.GetSaldo());
+//Console.WriteLine(conta3.Numero_agencia);
+//Console.WriteLine(conta3.Conta);
+
+//ContaCorrente conta4 = new ContaCorrente(18, "1010-x");
+//conta4.Titular = new();
+//conta4.Titular.Nome = "Lucas";
+
+//Console.WriteLine(conta4.GetSaldo());
+//Console.WriteLine(conta4.Titular.Nome);
+
+ContaCorrente conta5 = new ContaCorrente(183, "1034-x");
+Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+ContaCorrente conta6 = new ContaCorrente(184, "2034-x");
+Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+ContaCorrente conta7 = new ContaCorrente(184, "2034-x");
+Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
