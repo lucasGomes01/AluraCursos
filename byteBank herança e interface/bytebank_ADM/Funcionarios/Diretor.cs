@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace bytebank_ADM.Funcionarios
+﻿namespace bytebank_ADM.Funcionarios
 {
     public class Diretor : Funcionario
     {
-        public double GetBonificacao()
+        public override double GetBonificacao()
         {
-            return this.Salario;
+            return this.Salario + base.GetBonificacao();
         }
     }
 }

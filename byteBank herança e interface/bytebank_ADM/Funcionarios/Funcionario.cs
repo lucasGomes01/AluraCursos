@@ -11,15 +11,9 @@ namespace bytebank_ADM.Funcionarios
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public double Salario { get; set; }
-        //private int tipo;
 
-        //public Funcionario(int tipo) => this.tipo = tipo;
-
-        public double GetBonificacao()
+        public virtual double GetBonificacao()
         {
-            //if (tipo == 1)
-            //    return this.Salario;
-
             return this.Salario * 0.10;
         }
     }
