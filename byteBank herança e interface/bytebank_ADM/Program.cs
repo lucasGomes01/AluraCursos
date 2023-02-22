@@ -1,4 +1,5 @@
 ﻿using bytebank_ADM.Funcionarios;
+using bytebank_ADM.SistemaInterno;
 using bytebank_ADM.Utilitario;
 
 //Funcionario pedro = new("123456789", 2000)
@@ -27,7 +28,7 @@ using bytebank_ADM.Utilitario;
 //Console.WriteLine("pedro salário:" + pedro.Salario);
 //Console.WriteLine("roberta salário:" + roberta.Salario);
 
-CalcularBonificacao();
+//CalcularBonificacao();
 void CalcularBonificacao()
 {
     GerenciadorDeBonificacao gerenciador = new();
@@ -50,4 +51,22 @@ void CalcularBonificacao()
     gerenciador.Registrar(Camila);
 
     Console.WriteLine(gerenciador.TotalDeBonificacao);
+}
+
+UsarSistema();
+void UsarSistema()
+{
+    SistemaInterno sistema = new();
+    Diretor ingrid = new("852741");
+    ingrid.Nome = "Ingrid Novaes";
+    ingrid.Login = "ingrid.novaes";
+    ingrid.Senha = "123";
+
+    GerenteDeContas lucas = new("963741");
+    lucas.Nome = "Lucas Gomes";
+    lucas.Login = "lucas.gomes";
+    lucas.Senha = "321";
+
+    sistema.Logar(ingrid, "ingrid.novaes", "123");
+    sistema.Logar(lucas, "lucas.gomes", "333");
 }
