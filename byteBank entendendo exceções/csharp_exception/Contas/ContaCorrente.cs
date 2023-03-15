@@ -104,7 +104,5 @@ namespace csharp_exception.Contas
             */
             TotalDeContasCriadas++;
         }
-
-
     }
 }
