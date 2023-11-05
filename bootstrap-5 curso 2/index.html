@@ -17,8 +17,7 @@
   <link rel="stylesheet" href="./estilos.css">
 </head>
 
-<body>
-
+<body data-bs-theme="light">
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
@@ -47,8 +46,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                    <label class="form-check-label" for="flexSwitchCheckDefault">Modo noturno</label>
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
                   </div>
                 </a>
               </li>
@@ -68,7 +67,6 @@
 
     <section class="py-5">
       <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
-
       <div class="container d-flex justify-content-around flex-wrap">
         <div class="card m-4" style="width: 20rem;">
           <img src="./assets/cafe-card.png" class="card-img-top"
@@ -119,8 +117,7 @@
 
     <section class="py-5">
       <h2 class="fw-bold text-center pb-1">Nossos produtos</h2>
-
-      <div class="row">
+      <div class="row mx-auto">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1" style="width: 18rem;">
             <img src="./assets/produtos-cafe-tradicional.png" class="card-img-top" alt="café tradicional">
@@ -215,6 +212,17 @@
       </div>
     </section>
   </main>
+
+  <footer class="text-center">
+    <section class="container p-4 pb-0 mb-4">
+      <a class="btn" href=”#!”><i class="bi bi-whatsapp"></i></a>
+      <a class="btn" href=”#!”><i class="bi bi-instagram"></i></a>
+      <a class="btn" href=”#!”><i class="bi bi-twitter"></i></a>
+    </section>
+    <div class="p-3">
+      2023 <i class="bi bi-c-circle"></i> Desenvolvido por Alura | Projeto fictício sem fins comerciais.
+    </div>
+  </footer>
 
   <!-- offcanvas -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
@@ -399,6 +407,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
